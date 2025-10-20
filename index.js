@@ -9,12 +9,4 @@
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
-
-    const userRoutes = require('./routes/userRoutes');
-    const workoutRoutes = require('./routes/workoutRoutes');
-
-  app.use('/api/users', userRoutes);
-  app.use('/api/workouts', workoutRoutes);
-
-    module.exports = app;
   
